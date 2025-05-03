@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.hecomi.uwindowcapture": {
+      "version": "file:com.hecomi.uwindowcapture",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.2d.animation": {
       "version": "10.1.4",
       "depth": 1,
