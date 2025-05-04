@@ -44,10 +44,10 @@ public class OverlayWindow : MonoBehaviour {
         DwmExtendFrameIntoClientArea(m_hWnd, ref margins);
     }
 
-    private void Update() {
-        bool isOverUi = EventSystem.current.IsPointerOverGameObject();
-        SetClickThrough(!isOverUi);
-    }
+    // private void Update() {
+    //     bool isOverUi = EventSystem.current.IsPointerOverGameObject();
+    //     SetClickThrough(!isOverUi);
+    // }
 
     private void SetClickThrough(bool isClickThrough) {
         if (Application.isEditor) {
