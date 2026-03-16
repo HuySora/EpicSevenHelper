@@ -70,6 +70,12 @@
       "dependencies": {},
       "url": "https://package.openupm.com"
     },
+    "com.hecomi.uwindowcapture": {
+      "version": "file:com.hecomi.uwindowcapture",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.needle.console": {
       "version": "https://github.com/needle-tools/needle-console.git?path=/package",
       "depth": 0,

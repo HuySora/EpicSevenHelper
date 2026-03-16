@@ -10,6 +10,7 @@
     "com.cysharp.zlogger": "https://github.com/Cysharp/ZLogger.git?path=src/ZLogger.Unity/Assets/ZLogger.Unity",
     "com.cysharp.zstring": "https://github.com/Cysharp/ZString.git?path=src/ZString.Unity/Assets/Scripts/ZString",
     "com.github-glitchenzo.nugetforunity": "4.5.0",
+    "com.hecomi.uwindowcapture": "https://github.com/hecomi/uWindowCapture.git#upm",
     "com.needle.console": "https://github.com/needle-tools/needle-console.git?path=/package",
     "com.seaeees.simple-folder-icon": "https://github.com/SeaeeesSan/SimpleFolderIcon.git?path=Packages/com.seaeees.simple-folder-icon",
     "com.singularitygroup.hotreload": "https://gitlab.hotreload.net/root/hot-reload-releases.git",
