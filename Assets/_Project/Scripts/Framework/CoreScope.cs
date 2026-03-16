@@ -2,6 +2,7 @@ using QFSW.QC;
 using SaintsField.Playa;
 using SoraTehk.Extensions;
 using SoraTehk.Prepare;
+using UnityEngine.InputSystem;
 using VContainer;
 using VContainer.Unity;
 
@@ -45,6 +46,8 @@ namespace SoraTehk.E7Helper {
             QuantumRegistry.RegisterObject(GameWindow);
             QuantumRegistry.RegisterObject(ViewManager);
             QuantumRegistry.RegisterObject(InputManager);
+            // TODO: SharpHookKeyboard could be null here but it would be a fatal error anyway
+            QuantumRegistry.RegisterObject(InputSystem.GetDevice<SharpHookKeyboard>());
 
             // Entry point
             builder.RegisterComponent(CoreEntryPoint).AsImplementedInterfaces();
