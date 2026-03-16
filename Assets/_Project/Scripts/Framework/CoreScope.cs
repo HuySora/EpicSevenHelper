@@ -18,11 +18,17 @@ namespace SoraTehk.E7Helper {
             if (GameWindow == null) {
                 isDirty |= gameObject.scene.TryFindFirstComponent(out GameWindow!);
             }
+            if (TextureManager == null) {
+                isDirty |= gameObject.scene.TryFindFirstComponent(out TextureManager!);
+            }
             if (ViewManager == null) {
                 isDirty |= gameObject.scene.TryFindFirstComponent(out ViewManager!);
             }
             if (InputManager == null) {
                 isDirty |= gameObject.scene.TryFindFirstComponent(out InputManager!);
+            }
+            if (UwcWindowCaptureManager == null) {
+                isDirty |= gameObject.scene.TryFindFirstComponent(out UwcWindowCaptureManager!);
             }
 
             return isDirty;
@@ -33,19 +39,25 @@ namespace SoraTehk.E7Helper {
         [LayoutStart("Scene", ELayout.FoldoutBox)]
         public CoreEntryPoint CoreEntryPoint = null!;
         public GameWindow GameWindow = null!;
+        public TextureManager TextureManager = null!;
         public ViewManager ViewManager = null!;
         public InputManager InputManager = null!;
+        public UwcWindowCaptureManager UwcWindowCaptureManager = null!;
 
         protected override void Configure(IContainerBuilder builder) {
             // System
             builder.RegisterComponent(GameWindow);
+            builder.RegisterComponent(TextureManager);
             builder.RegisterComponent(ViewManager);
             builder.RegisterComponent(InputManager);
+            builder.RegisterComponent(UwcWindowCaptureManager);
 
             // Console commands
             QuantumRegistry.RegisterObject(GameWindow);
+            QuantumRegistry.RegisterObject(TextureManager);
             QuantumRegistry.RegisterObject(ViewManager);
             QuantumRegistry.RegisterObject(InputManager);
+            QuantumRegistry.RegisterObject(UwcWindowCaptureManager);
             // TODO: SharpHookKeyboard could be null here but it would be a fatal error anyway
             QuantumRegistry.RegisterObject(InputSystem.GetDevice<SharpHookKeyboard>());
 
