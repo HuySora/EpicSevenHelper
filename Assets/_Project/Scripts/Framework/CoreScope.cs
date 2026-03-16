@@ -30,6 +30,9 @@ namespace SoraTehk.E7Helper {
             if (UwcWindowCaptureManager == null) {
                 isDirty |= gameObject.scene.TryFindFirstComponent(out UwcWindowCaptureManager!);
             }
+            if (EquipmentOcr == null) {
+                isDirty |= gameObject.scene.TryFindFirstComponent(out EquipmentOcr!);
+            }
 
             return isDirty;
         }
@@ -43,6 +46,7 @@ namespace SoraTehk.E7Helper {
         public ViewManager ViewManager = null!;
         public InputManager InputManager = null!;
         public UwcWindowCaptureManager UwcWindowCaptureManager = null!;
+        public EquipmentOcr EquipmentOcr = null!;
 
         protected override void Configure(IContainerBuilder builder) {
             // System
@@ -51,6 +55,7 @@ namespace SoraTehk.E7Helper {
             builder.RegisterComponent(ViewManager);
             builder.RegisterComponent(InputManager);
             builder.RegisterComponent(UwcWindowCaptureManager);
+            builder.RegisterComponent(EquipmentOcr);
 
             // Console commands
             QuantumRegistry.RegisterObject(GameWindow);
@@ -58,6 +63,7 @@ namespace SoraTehk.E7Helper {
             QuantumRegistry.RegisterObject(ViewManager);
             QuantumRegistry.RegisterObject(InputManager);
             QuantumRegistry.RegisterObject(UwcWindowCaptureManager);
+            QuantumRegistry.RegisterObject(EquipmentOcr);
             // TODO: SharpHookKeyboard could be null here but it would be a fatal error anyway
             QuantumRegistry.RegisterObject(InputSystem.GetDevice<SharpHookKeyboard>());
 

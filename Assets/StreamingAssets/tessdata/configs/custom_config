@@ -179,10 +179,10 @@ language_model_use_sigmoidal_certainty	0
 language_model_viterbi_list_max_num_prunable	10
 language_model_viterbi_list_max_size	500
 load_bigram_dawg	1
-load_freq_dawg	1
-load_number_dawg	1
-load_punc_dawg	1
-load_system_dawg	1
+load_freq_dawg 0
+load_number_dawg 0
+load_punc_dawg 0
+load_system_dawg 0
 load_unambig_dawg	1
 lstm_choice_iterations	5
 lstm_choice_mode	0
@@ -295,7 +295,7 @@ tessedit_bigram_debug	0
 tessedit_certainty_threshold	-2.25
 tessedit_char_blacklist	
 tessedit_char_unblacklist	
-tessedit_char_whitelist	
+tessedit_char_whitelist	0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz%()+-
 tessedit_class_miss_scale	0.00390625
 tessedit_create_alto	0
 tessedit_create_boxfile	0
@@ -310,7 +310,7 @@ tessedit_debug_doc_rejection	0
 tessedit_debug_fonts	0
 tessedit_debug_quality_metrics	0
 tessedit_display_outwords	0
-tessedit_do_invert	1
+tessedit_do_invert 0
 tessedit_dont_blkrej_good_wds	0
 tessedit_dont_rowrej_good_wds	0
 tessedit_dump_choices	0
@@ -592,7 +592,7 @@ unlv_tilde_crunching	0
 unrecognised_char	|
 use_ambigs_for_adaption	0
 use_only_first_uft8_step	0
-user_defined_dpi	0
+user_defined_dpi 300
 user_patterns_file	
 user_patterns_suffix	
 user_words_file	
