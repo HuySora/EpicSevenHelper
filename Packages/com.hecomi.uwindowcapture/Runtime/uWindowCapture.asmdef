@@ -1,5 +1,6 @@
 {
     "name": "uWindowCapture.Runtime",
+    "rootNamespace": "",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
