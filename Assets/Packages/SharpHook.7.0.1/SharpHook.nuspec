@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SharpHook</id>
+    <version>7.0.1</version>
+    <authors>Tolik Pylypchuk</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>icon.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://sharphook.tolik.io/</projectUrl>
+    <description>SharpHook provides a cross-platform global keyboard and mouse hook, event simulation, and text entry simulation for .NET.</description>
+    <copyright>(c) 2021 Anatoliy Pylypchuk</copyright>
+    <tags>input keyboard mouse hook global-hook simulator libuiohook</tags>
+    <repository type="git" url="https://github.com/TolikPylypchuk/SharpHook" commit="e3600f1f1acb3b104752f2cb44a528980e5024c1" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2" />
+      <group targetFramework="net8.0" />
+      <group targetFramework="net8.0-maccatalyst18.0" />
+      <group targetFramework="net9.0" />
+      <group targetFramework="net9.0-maccatalyst18.0" />
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>
