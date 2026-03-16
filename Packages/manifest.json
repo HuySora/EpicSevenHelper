@@ -14,6 +14,7 @@
     "com.needle.console": "https://github.com/needle-tools/needle-console.git?path=/package",
     "com.seaeees.simple-folder-icon": "https://github.com/SeaeeesSan/SimpleFolderIcon.git?path=Packages/com.seaeees.simple-folder-icon",
     "com.singularitygroup.hotreload": "https://gitlab.hotreload.net/root/hot-reload-releases.git",
+    "com.soratehk.sorafoundation": "file:C:/Projects/SoraFoundation/Packages/com.soratehk.sorafoundation",
     "com.unity.addressables": "2.9.1",
     "com.unity.ai.navigation": "2.0.11",
     "com.unity.cinemachine": "3.1.6",
