@@ -32,6 +32,9 @@ namespace SoraTehk.E7Helper {
             if (CanvasScaler == null) {
                 isDirty |= gameObject.scene.TryFindFirstComponent(out CanvasScaler!, "Canvas");
             }
+            if (CanvasGroup == null) {
+                isDirty |= gameObject.scene.TryFindFirstComponent(out CanvasGroup!, "Canvas");
+            }
             if (WindowSyncImage == null) {
                 isDirty |= gameObject.scene.TryFindFirstComponent(out WindowSyncImage!, "Image_UwcWindowSync");
             }
@@ -46,13 +49,14 @@ namespace SoraTehk.E7Helper {
         // ReSharper disable once FieldCanBeMadeReadOnly.Local
         internal void LogWindowProperties() {
             if (m_CurrWindow == null) return;
-            
+
             SorLog.LogInfo($"Resolution={m_CurrWindow.width}x{m_CurrWindow.height}({m_CurrWindow.rawWidth}x{m_CurrWindow.rawHeight}), isMaximized={m_CurrWindow.isMaximized}");
         }
-        
+
         [LayoutStart("Scene", ELayout.FoldoutBox)]
         public UwcWindowTexture WindowCapture = null!;
         public CanvasScaler CanvasScaler = null!;
+        public CanvasGroup CanvasGroup = null!;
         public RawImage WindowSyncImage = null!;
 
         public event Action<Texture2D>? OnCaptured;
@@ -83,6 +87,10 @@ namespace SoraTehk.E7Helper {
         private void OnDisable() {
             WindowCapture.onWindowChanged.RemoveListener(HandleWindowChanged);
             if (m_CurrWindow != null) m_CurrWindow.onCaptured.RemoveListener(HandleCaptured);
+        }
+
+        private void Update() {
+            CanvasGroup.alpha = m_CurrWindow is { isMinimized: true } ? 0 : 1;
         }
 
         private void OnDestroy() {
