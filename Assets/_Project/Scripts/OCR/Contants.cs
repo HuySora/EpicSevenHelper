@@ -283,11 +283,11 @@ public static class Constants {
     // Based on https://docs.google.com/spreadsheets/d/10n16n7iYPPnWAGrl00j2j0OAjlwQ5MPuGMSd_tTuoNc/edit?gid=49811653#gid=49811653
     public static readonly Dictionary<int, (decimal Min, decimal Max)> EquipmentRank2GearScoreMinMax =
         new Dictionary<int, (decimal Min, decimal Max)> {
-            { 0, (23, 25) }, { 1, (23, 25) }, { 2, (23, 25) },
-            { 3, (30, 32) }, { 4, (30, 32) }, { 5, (30, 32) },
-            { 6, (37, 39) }, { 7, (37, 39) }, { 8, (37, 39) },
-            { 9, (44, 46) }, { 10, (44, 46) }, { 11, (44, 46) },
-            { 12, (52, 53) }, { 13, (52, 53) }, { 14, (52, 53) },
-            { 15, (60, 60) }
+            { 0, (26, 28) }, { 1, (26, 28) }, { 2, (26, 28) },
+            { 3, (33, 35) }, { 4, (33, 35) }, { 5, (33, 35) },
+            { 6, (40, 42) }, { 7, (40, 42) }, { 8, (40, 42) },
+            { 9, (47, 49) }, { 10, (47, 49) }, { 11, (47, 49) },
+            { 12, (55, 56) }, { 13, (55, 56) }, { 14, (55, 56) },
+            { 15, (63, 63) }
         };
 }
